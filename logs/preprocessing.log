@@ -1,0 +1,35 @@
+2025-11-29 18:54:21,292 - INFO - preprocessing - Applied Ordinal Encoding to column: Model
+2025-11-29 18:54:21,293 - INFO - preprocessing - Applied Ordinal Encoding to column: Engine_Type
+2025-11-29 18:54:21,294 - INFO - preprocessing - Applied Ordinal Encoding to column: Sales_Region
+2025-11-29 18:54:21,295 - INFO - preprocessing - Applied Ordinal Encoding to column: Company
+2025-11-29 18:54:21,296 - INFO - preprocessing - Applied Ordinal Encoding to column: Age_Group
+2025-11-29 18:54:21,296 - INFO - preprocessing - All categorical features encoded using Ordinal Encoding.
+2025-11-29 18:54:21,314 - INFO - preprocessing - Numerical scaling applied to 20 columns using MinMaxScaler().
+2025-11-29 18:54:21,314 - INFO - use_preprocessing - Preprocessing steps completed successfully.
+2025-11-29 18:54:21,423 - INFO - use_preprocessing - Preprocessed dataset saved to data/preprocessed/preprocessed_dataset.csv
+2025-11-29 18:54:21,426 - INFO - use_preprocessing - Preprocessing pipeline saved to pipeline/preprocessed_pipeline.joblib
+2025-11-29 18:54:21,426 - INFO - use_preprocessing - Successfully preprocessed the dataset and saved all outputs!
+2025-11-29 18:54:34,245 - INFO - preprocessing - Applied Ordinal Encoding to column: Model
+2025-11-29 18:54:34,245 - INFO - preprocessing - Applied Ordinal Encoding to column: Engine_Type
+2025-11-29 18:54:34,245 - INFO - preprocessing - Applied Ordinal Encoding to column: Sales_Region
+2025-11-29 18:54:34,245 - INFO - preprocessing - Applied Ordinal Encoding to column: Company
+2025-11-29 18:54:34,245 - INFO - preprocessing - Applied Ordinal Encoding to column: Age_Group
+2025-11-29 18:54:34,246 - INFO - preprocessing - Scaled column: Model
+2025-11-29 18:54:34,247 - INFO - preprocessing - Scaled column: Year_of_Manufacture
+2025-11-29 18:54:34,248 - INFO - preprocessing - Scaled column: Number_of_Engines
+2025-11-29 18:54:34,248 - INFO - preprocessing - Scaled column: Engine_Type
+2025-11-29 18:54:34,249 - INFO - preprocessing - Scaled column: Capacity
+2025-11-29 18:54:34,249 - INFO - preprocessing - Scaled column: Fuel_Consumption_(L/hour)
+2025-11-29 18:54:34,250 - INFO - preprocessing - Scaled column: Hourly_Maintenance_Cost_($)
+2025-11-29 18:54:34,250 - INFO - preprocessing - Scaled column: Age
+2025-11-29 18:54:34,251 - INFO - preprocessing - Scaled column: Sales_Region
+2025-11-29 18:54:34,251 - INFO - preprocessing - Scaled column: Price_($)
+2025-11-29 18:54:34,252 - INFO - preprocessing - Scaled column: Company
+2025-11-29 18:54:34,252 - INFO - preprocessing - Scaled column: Age_Group
+2025-11-29 18:54:34,253 - INFO - preprocessing - Scaled column: HMC_per_person
+2025-11-29 18:54:34,253 - INFO - preprocessing - Scaled column: Engine_Power_Factor
+2025-11-29 18:54:34,254 - INFO - preprocessing - Scaled column: Price_per_Seat
+2025-11-29 18:54:34,254 - INFO - preprocessing - Scaled column: Seats_per_Engine
+2025-11-29 18:54:34,255 - INFO - preprocessing - Scaled column: Company_Popularity
+2025-11-29 18:54:34,255 - INFO - preprocessing - Scaled column: FuelCost_Maint_Index
+2025-11-29 18:54:34,256 - INFO - preprocessing - Scaled column: Engine_to_Capacity

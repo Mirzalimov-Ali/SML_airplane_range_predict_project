@@ -33,3 +33,809 @@
 2025-11-29 18:54:34,255 - INFO - preprocessing - Scaled column: Company_Popularity
 2025-11-29 18:54:34,255 - INFO - preprocessing - Scaled column: FuelCost_Maint_Index
 2025-11-29 18:54:34,256 - INFO - preprocessing - Scaled column: Engine_to_Capacity
+2026-01-10 12:53:51,172 - INFO - preprocessing TRAIN - Filled NUMERIC columns using KNNImputer: ['Year_of_Manufacture', 'Number_of_Engines', 'Capacity', 'Fuel_Consumption_(L/hour)', 'Hourly_Maintenance_Cost_($)', 'Age', 'Price_($)']
+2026-01-10 12:53:51,173 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Model' with MODE: Boeing 737
+2026-01-10 12:53:51,174 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Engine_Type' with MODE: Turbofan
+2026-01-10 12:53:51,175 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Sales_Region' with MODE: Africa
+2026-01-10 12:53:51,175 - INFO - preprocessing TRAIN - Missing values filled successfully (TRAIN)
+2026-01-10 12:53:51,175 - INFO - use_filling - Preprocessing steps completed successfully.
+2026-01-10 12:53:51,178 - INFO - use_filling - Preprocessing pipeline saved to pipeline/filled_x_train.joblib
+2026-01-10 12:53:51,179 - INFO - use_filling - Preprocessing steps completed successfully.
+2026-01-10 12:53:51,207 - INFO - use_filling - Filled dataset saved to data/filled/filled_x_train.csv
+2026-01-10 12:53:51,214 - INFO - use_filling - Filled dataset saved to data/filled/filled_x_test.csv
+2026-01-10 12:53:51,214 - INFO - use_filling - Successfully filled the dataset and saved all outputs!
+2026-01-10 12:55:35,970 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 12:55:35,971 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 12:55:35,972 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 12:55:35,973 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 12:55:35,974 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 12:55:35,974 - INFO - preprocessing TRAIN - All categorical features encoded using Ordinal Encoding.
+2026-01-10 12:55:35,977 - INFO - preprocessing TRAIN - Log transformation applied to: ['Fuel_Consumption_(L/hour)', 'Price_($)', 'Company', 'HMC_per_person', 'Price_per_Seat', 'Engine_to_Capacity']
+2026-01-10 12:55:35,980 - INFO - preprocessing TRAIN - Numerical scaling applied to 19 columns using StandardScaler()
+2026-01-10 12:55:35,980 - INFO - use_preprocessing - Preprocessing steps completed successfully.
+2026-01-10 12:55:35,983 - INFO - use_preprocessing - Preprocessing pipeline saved to pipeline/preprodessed_pipeline.joblib
+2026-01-10 12:55:35,984 - INFO - preprocessing TEST - [TEST] Applied Label Encoding to column: Model
+2026-01-10 12:55:35,984 - INFO - preprocessing TEST - [TEST] Applied Label Encoding to column: Engine_Type
+2026-01-10 12:55:35,985 - INFO - preprocessing TEST - [TEST] Applied Label Encoding to column: Sales_Region
+2026-01-10 12:55:35,986 - INFO - preprocessing TEST - [TEST] Applied Label Encoding to column: Company
+2026-01-10 12:55:35,987 - INFO - preprocessing TEST - [TEST] Applied Label Encoding to column: Age_Group
+2026-01-10 12:55:35,987 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Fuel_Consumption_(L/hour)
+2026-01-10 12:55:35,987 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Price_($)
+2026-01-10 12:55:35,987 - INFO - preprocessing TEST - [TEST] Applied log1p to column: HMC_per_person
+2026-01-10 12:55:35,987 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Price_per_Seat
+2026-01-10 12:55:35,988 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Engine_to_Capacity
+2026-01-10 12:55:35,990 - INFO - preprocessing TEST - [TEST] Scaled numeric columns using StandardScaler
+2026-01-10 12:55:35,990 - INFO - use_preprocessing - Preprocessing steps completed successfully.
+2026-01-10 12:55:36,097 - INFO - use_preprocessing - reprocessed dataset saved to data/preprocessed/preprocessed_x_train.csv
+2026-01-10 12:55:36,123 - INFO - use_preprocessing - Preprocessed dataset saved to data/preprocessed/preprocessed_x_test.csv
+2026-01-10 12:55:36,123 - INFO - use_preprocessing - Successfully preprocessed the dataset and saved all outputs!
+2026-01-10 13:24:23,566 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:24:23,567 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:24:23,567 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:24:23,567 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:24:52,143 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:24:52,143 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:24:52,143 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:24:52,143 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:24:52,655 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:24:52,655 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:24:52,656 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:24:52,656 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:24:52,811 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:24:52,811 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:24:52,811 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:24:52,811 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:24:52,950 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:24:52,950 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:24:52,950 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:24:52,951 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:27:30,593 - INFO - preprocessing TRAIN - Filled NUMERIC columns using KNNImputer: ['Year_of_Manufacture', 'Number_of_Engines', 'Capacity', 'Fuel_Consumption_(L/hour)', 'Hourly_Maintenance_Cost_($)', 'Age', 'Price_($)']
+2026-01-10 13:27:30,594 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Model' with MODE: Boeing 737
+2026-01-10 13:27:30,596 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Engine_Type' with MODE: Turbofan
+2026-01-10 13:27:30,596 - INFO - preprocessing TRAIN - Filled CATEGORICAL column 'Sales_Region' with MODE: Africa
+2026-01-10 13:27:30,596 - INFO - preprocessing TRAIN - Missing values filled successfully (TRAIN)
+2026-01-10 13:27:30,596 - INFO - use_filling - Preprocessing steps completed successfully.
+2026-01-10 13:27:30,599 - INFO - use_filling - Preprocessing pipeline saved to pipeline/filled_x_train.joblib
+2026-01-10 13:27:30,600 - INFO - use_filling - Preprocessing steps completed successfully.
+2026-01-10 13:27:30,627 - INFO - use_filling - Filled dataset saved to data/filled/filled_x_train.csv
+2026-01-10 13:27:30,634 - INFO - use_filling - Filled dataset saved to data/filled/filled_x_test.csv
+2026-01-10 13:27:30,634 - INFO - use_filling - Successfully filled the dataset and saved all outputs!
+2026-01-10 13:27:55,664 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:27:55,666 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:27:55,667 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:27:55,669 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:27:55,670 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:27:55,670 - INFO - preprocessing TRAIN - All categorical features encoded using Ordinal Encoding.
+2026-01-10 13:27:55,672 - INFO - preprocessing TRAIN - Log transformation applied to: ['Fuel_Consumption_(L/hour)', 'Price_($)', 'Company', 'HMC_per_person', 'Price_per_Seat', 'Engine_to_Capacity']
+2026-01-10 13:27:55,676 - INFO - preprocessing TRAIN - Numerical scaling applied to 19 columns using StandardScaler()
+2026-01-10 13:27:55,676 - INFO - use_preprocessing - Preprocessing steps completed successfully.
+2026-01-10 13:27:55,678 - INFO - use_preprocessing - Preprocessing pipeline saved to pipeline/preprodessed_pipeline.joblib
+2026-01-10 13:27:55,679 - INFO - preprocessing TEST - [TEST] Applied Ordinal Encoding to column: Model
+2026-01-10 13:27:55,680 - INFO - preprocessing TEST - [TEST] Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:27:55,680 - INFO - preprocessing TEST - [TEST] Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:27:55,681 - INFO - preprocessing TEST - [TEST] Applied Ordinal Encoding to column: Company
+2026-01-10 13:27:55,681 - INFO - preprocessing TEST - [TEST] Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:27:55,682 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Fuel_Consumption_(L/hour)
+2026-01-10 13:27:55,682 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Price_($)
+2026-01-10 13:27:55,682 - INFO - preprocessing TEST - [TEST] Applied log1p to column: HMC_per_person
+2026-01-10 13:27:55,682 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Price_per_Seat
+2026-01-10 13:27:55,682 - INFO - preprocessing TEST - [TEST] Applied log1p to column: Engine_to_Capacity
+2026-01-10 13:27:55,684 - INFO - preprocessing TEST - [TEST] Scaled numeric columns using StandardScaler
+2026-01-10 13:27:55,684 - INFO - use_preprocessing - Preprocessing steps completed successfully.
+2026-01-10 13:27:55,796 - INFO - use_preprocessing - reprocessed dataset saved to data/preprocessed/preprocessed_x_train.csv
+2026-01-10 13:27:55,823 - INFO - use_preprocessing - Preprocessed dataset saved to data/preprocessed/preprocessed_x_test.csv
+2026-01-10 13:27:55,823 - INFO - use_preprocessing - Successfully preprocessed the dataset and saved all outputs!
+2026-01-10 13:29:00,999 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:29:01,000 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:29:01,000 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:29:01,000 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:29:01,006 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:29:01,006 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:29:01,007 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:29:01,007 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:29:01,008 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:29:01,009 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:29:01,011 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:29:11,883 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:29:11,884 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:29:11,884 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:29:11,884 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:29:11,890 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:29:11,891 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:29:11,891 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:29:11,892 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:29:11,892 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:29:11,893 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:29:11,896 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:30:23,639 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:30:23,639 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:30:23,640 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:30:23,640 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:30:23,642 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:30:23,642 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:30:23,642 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:30:23,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:30:23,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:30:23,643 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:30:23,644 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:30:23,644 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:30:23,644 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:30:23,644 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:30:23,644 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:30:23,645 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:30:24,120 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:30:24,120 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:30:24,120 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:30:24,120 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:30:24,123 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:30:24,123 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:30:24,124 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:30:24,124 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:30:24,124 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:30:24,124 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:30:24,125 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:30:24,125 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:30:24,125 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:30:24,125 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:30:24,125 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:30:24,126 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:30:24,308 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:30:24,308 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:30:24,308 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:30:24,308 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:30:24,311 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:30:24,311 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:30:24,311 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:30:24,312 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:30:24,312 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:30:24,312 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:30:24,313 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:30:24,313 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:30:24,313 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:30:24,313 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:30:24,313 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:30:24,315 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:30:24,465 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:30:24,466 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:30:24,466 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:30:24,466 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:30:24,471 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:30:24,471 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:30:24,472 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:30:24,472 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:30:24,473 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:30:24,473 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:30:24,474 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:30:24,474 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:30:24,474 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:30:24,474 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:30:24,475 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:30:24,478 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:30:24,637 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:30:24,638 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:30:24,638 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:30:24,638 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:30:24,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:30:24,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:30:24,644 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:30:24,645 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:30:24,645 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:30:24,645 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:30:24,646 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:30:24,646 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:30:24,646 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:30:24,646 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:30:24,647 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:30:24,692 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:31:20,608 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:31:20,608 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:31:20,609 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:31:20,609 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:31:20,613 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:31:20,614 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:31:20,614 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:31:20,615 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:31:20,615 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:31:20,616 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:31:20,616 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:31:20,616 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:31:20,616 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:31:20,617 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:31:20,617 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:31:20,620 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:32:15,713 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:32:15,713 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:32:15,713 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:32:15,714 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:32:15,717 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:32:15,717 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:32:15,718 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:32:15,718 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:32:15,719 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:32:15,722 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:32:43,698 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:32:43,698 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:32:43,698 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:32:43,699 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:32:43,704 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:32:43,704 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:32:43,705 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:32:43,706 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:32:43,706 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:32:43,707 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:32:43,707 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:32:43,707 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:32:43,708 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:32:43,708 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:32:43,710 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:50,627 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:50,627 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:50,627 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:50,628 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:50,631 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:50,632 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:50,633 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:50,633 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:50,634 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:50,634 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:50,634 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:50,634 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:50,635 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:50,635 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:50,636 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:51,355 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:51,355 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:51,356 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:51,356 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:51,360 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:51,361 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:51,362 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:51,362 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:51,363 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:51,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:51,364 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:51,364 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:51,365 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:51,365 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:51,368 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:51,501 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:51,501 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:51,501 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:51,502 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:51,507 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:51,507 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:51,508 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:51,508 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:51,509 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:51,509 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:51,510 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:51,510 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:51,510 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:51,510 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:51,514 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:51,671 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:51,671 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:51,671 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:51,671 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:51,674 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:51,675 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:51,675 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:51,676 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:51,676 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:51,676 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:51,676 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:51,676 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:51,677 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:51,677 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:51,679 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:51,842 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:51,843 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:51,843 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:51,843 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:51,846 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:51,847 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:51,848 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:51,848 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:51,849 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:51,849 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:51,849 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:51,850 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:51,850 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:51,850 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:51,895 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:51,998 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:51,998 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:51,998 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:51,999 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:52,002 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:52,002 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:52,002 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:52,003 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:52,003 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:52,003 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:52,003 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:52,004 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:52,004 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:52,004 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:52,005 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:53,102 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:53,102 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:53,103 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:53,103 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:53,107 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:53,108 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:53,109 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:53,109 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:53,110 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:53,110 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:53,110 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:53,112 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:53,112 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:53,112 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:53,115 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:53,663 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:53,663 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:53,663 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:53,663 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:53,666 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:53,666 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:53,666 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:53,667 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:53,667 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:53,667 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:53,667 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:53,667 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:53,668 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:53,668 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:53,669 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:54,055 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:54,056 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:54,056 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:54,056 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:54,060 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:54,061 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:54,061 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:54,062 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:54,063 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:54,063 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:54,063 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:54,064 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:54,064 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:54,064 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:54,066 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:54,595 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:54,595 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:54,595 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:54,595 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:54,598 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:54,598 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:54,599 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:54,599 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:54,599 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:54,600 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:54,600 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:54,600 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:54,600 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:54,600 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:54,601 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:55,203 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:55,203 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:55,204 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:55,204 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:55,209 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:55,210 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:55,210 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:55,211 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:55,211 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:55,212 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:55,212 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:55,212 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:55,213 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:55,213 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:55,216 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:55,358 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:55,359 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:55,359 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:55,359 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:55,361 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:55,362 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:55,362 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:55,362 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:55,363 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:55,365 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:55,558 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:55,558 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:55,558 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:55,559 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:55,561 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:55,561 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:55,562 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:55,562 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:55,562 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:55,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:55,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:55,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:55,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:55,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:55,565 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:55,744 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:55,744 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:55,745 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:55,745 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:55,747 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:55,748 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:55,748 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:55,748 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:55,749 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:55,749 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:55,749 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:55,749 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:55,749 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:55,750 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:55,751 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:55,916 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:55,917 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:55,917 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:55,917 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:55,921 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:55,922 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:55,922 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:55,923 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:55,923 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:55,924 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:55,924 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:55,924 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:55,925 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:55,925 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:55,931 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:56,103 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:56,103 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:56,103 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:56,103 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:56,106 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:56,106 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:56,106 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:56,107 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:56,107 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:56,107 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:56,107 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:56,108 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:56,108 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:56,108 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:56,109 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:56,262 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:56,262 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:56,262 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:56,262 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:56,267 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:56,267 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:56,268 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:56,268 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:56,269 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:56,269 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:56,270 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:56,270 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:56,270 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:56,270 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:56,275 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:40:56,445 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:40:56,446 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:40:56,446 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:40:56,446 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:40:56,451 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:40:56,451 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:40:56,452 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:40:56,453 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:40:56,453 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:40:56,453 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:40:56,454 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:40:56,454 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:40:56,454 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:40:56,455 - INFO - preprocessing TRAIN - Applied log1p transformation to: Engine_to_Capacity
+2026-01-10 13:40:56,457 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:42:40,644 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:42:40,645 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:42:40,645 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:42:40,645 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:42:40,649 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:42:40,650 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:42:40,650 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:42:40,650 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:42:40,651 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:42:40,653 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:53:46,930 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:53:46,930 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:53:46,930 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:53:46,930 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:53:46,934 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:53:46,934 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:53:46,935 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:53:46,935 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:53:46,935 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:53:46,937 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:06,017 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:06,017 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:06,017 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:06,017 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:06,020 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:06,020 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:06,020 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:06,021 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:06,021 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:06,021 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:06,023 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:16,926 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:16,926 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:16,926 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:16,926 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:16,929 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:16,929 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:16,930 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:16,930 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:16,930 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:16,931 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:16,932 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:21,339 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:21,339 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:21,339 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:21,341 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:21,344 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:21,344 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:21,344 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:21,345 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:21,345 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:21,345 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:21,347 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:24,558 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:24,558 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:24,558 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:24,559 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:24,563 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:24,563 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:24,564 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:24,565 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:24,565 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:24,566 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:24,569 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:30,554 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:30,554 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:30,554 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:30,555 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:30,560 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:30,561 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:30,561 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:30,562 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:30,562 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:30,563 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:30,566 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:35,381 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:35,381 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:35,381 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:35,381 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:35,383 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:35,384 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:35,385 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:35,386 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:35,387 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:35,387 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:35,390 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:35,676 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:35,676 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:35,676 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:35,676 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:35,681 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:35,681 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:35,682 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:35,682 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:35,683 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:35,683 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:35,686 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:39,259 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:39,260 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:39,260 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:39,260 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:39,264 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:39,265 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:39,265 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:39,266 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:39,268 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:39,268 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:42,840 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:42,840 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:42,841 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:42,841 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:42,846 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:42,847 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:42,847 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:42,848 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:42,848 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:42,849 - INFO - preprocessing TRAIN - Applied log1p transformation to: Company
+2026-01-10 13:54:49,066 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:49,067 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:49,067 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:49,067 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:49,071 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:49,072 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:49,073 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:49,073 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:49,074 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:49,077 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:54:51,635 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:51,635 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:51,635 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:51,635 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:51,638 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:51,638 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:51,638 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:51,639 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:51,639 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:55,461 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:54:55,461 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:54:55,462 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:54:55,462 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:54:55,466 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:54:55,467 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:54:55,468 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:54:55,468 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:54:55,469 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:54:55,469 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:54:55,472 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:55:17,850 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:17,850 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:17,850 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:17,850 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:17,853 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:17,853 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:17,853 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:17,853 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:17,855 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:17,855 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:55:17,857 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 13:55:21,210 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:21,210 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:21,210 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:21,210 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:21,212 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:21,213 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:21,213 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:21,213 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:21,214 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:21,214 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:55:21,214 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:55:27,777 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:27,778 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:27,778 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:27,778 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:27,785 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:27,785 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:27,786 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:27,787 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:27,787 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:27,788 - INFO - preprocessing TRAIN - Applied log1p transformation to: HMC_per_person
+2026-01-10 13:55:34,015 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:34,015 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:34,016 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:34,016 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:34,020 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:34,021 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:34,021 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:34,022 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:34,023 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:34,024 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:55:34,024 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:55:39,216 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:39,217 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:39,217 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:39,217 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:39,219 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:39,220 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:39,220 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:39,220 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:39,220 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:39,221 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:55:39,221 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:55:40,921 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:40,921 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:40,921 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:40,922 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:40,926 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:40,926 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:40,927 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:40,928 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:40,928 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:40,928 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:55:40,929 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_($)
+2026-01-10 13:55:40,929 - INFO - preprocessing TRAIN - Applied log1p transformation to: Price_per_Seat
+2026-01-10 13:55:43,086 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 13:55:43,086 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 13:55:43,086 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 13:55:43,087 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 13:55:43,089 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 13:55:43,089 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 13:55:43,090 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 13:55:43,090 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 13:55:43,090 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 13:55:43,090 - INFO - preprocessing TRAIN - Applied log1p transformation to: Fuel_Consumption_(L/hour)
+2026-01-10 13:55:43,092 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:03,639 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:03,639 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:03,639 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:03,639 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:03,642 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:03,642 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:03,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:03,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:03,643 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:07,840 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:07,840 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:07,840 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:07,840 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:07,845 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:07,845 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:07,846 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:07,846 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:07,847 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:07,850 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:09,717 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:09,717 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:09,717 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:09,718 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:09,721 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:09,722 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:09,722 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:09,722 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:09,723 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:09,724 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:13,404 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:13,404 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:13,404 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:13,404 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:13,406 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:13,407 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:13,407 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:13,407 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:13,408 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:20,915 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:20,915 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:20,915 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:20,915 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:20,918 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:20,918 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:20,918 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:20,919 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:20,919 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:20,920 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:21,727 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:21,727 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:21,728 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:21,728 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:21,730 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:21,730 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:21,731 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:21,731 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:21,731 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:21,733 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:22,226 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:22,226 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:22,226 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:22,226 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:22,231 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:22,231 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:22,232 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:22,232 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:22,233 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group
+2026-01-10 14:09:22,236 - INFO - preprocessing TRAIN - Scaled numerical columns using StandardScaler
+2026-01-10 14:09:38,335 - INFO - preprocessing TRAIN - Applied KNNImputer to numerical columns
+2026-01-10 14:09:38,335 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Model
+2026-01-10 14:09:38,335 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Engine_Type
+2026-01-10 14:09:38,336 - INFO - preprocessing TRAIN - Applied MODE imputer to column: Sales_Region
+2026-01-10 14:09:38,340 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Model
+2026-01-10 14:09:38,340 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Engine_Type
+2026-01-10 14:09:38,341 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Sales_Region
+2026-01-10 14:09:38,341 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Company
+2026-01-10 14:09:38,342 - INFO - preprocessing TRAIN - Applied Ordinal Encoding to column: Age_Group

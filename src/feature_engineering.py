@@ -4,7 +4,7 @@ from src.logger import get_logger
 
 logger = get_logger('feature_engineering', 'feature_engineering.log')
 
-class FeatureCreatorTransformer(BaseEstimator, TransformerMixin):
+class FeatureEngineering(BaseEstimator, TransformerMixin):
     def __init__(self):
         pass
 

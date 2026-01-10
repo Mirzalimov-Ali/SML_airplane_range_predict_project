@@ -4,3 +4,81 @@
 2025-11-29 18:54:06,247 - INFO - use_feature_engineering - Engineering pipeline saved to pipeline/feature_pipeline.joblib
 2025-11-29 18:54:06,247 - INFO - use_feature_engineering - Successfully engineered the dataset and saved all outputs!
 2025-11-29 18:54:34,243 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 12:55:28,246 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 12:55:28,246 - INFO - use_feature_engineering - Feature engineering completed for TRAIN dataset.
+2026-01-10 12:55:28,247 - INFO - use_feature_engineering - Feature engineering pipeline saved to pipeline/feature_engineering.joblib
+2026-01-10 12:55:28,250 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 12:55:28,250 - INFO - use_feature_engineering - Feature engineering completed for TEST dataset.
+2026-01-10 12:55:28,304 - INFO - use_feature_engineering - Engineered dataset saved to data/engineered/engineered_x_train.csv
+2026-01-10 12:55:28,318 - INFO - use_feature_engineering - Engineered dataset saved to data/engineered/engineered_x_test.csv
+2026-01-10 12:55:28,318 - INFO - use_feature_engineering - Successfully engineered the dataset and saved all outputs!
+2026-01-10 13:24:23,572 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:24:52,146 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:24:52,660 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:24:52,814 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:24:52,952 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:27:43,274 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:27:43,274 - INFO - use_feature_engineering - Feature engineering completed for TRAIN dataset.
+2026-01-10 13:27:43,274 - INFO - use_feature_engineering - Feature engineering pipeline saved to pipeline/feature_engineering.joblib
+2026-01-10 13:27:43,277 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:27:43,277 - INFO - use_feature_engineering - Feature engineering completed for TEST dataset.
+2026-01-10 13:27:43,330 - INFO - use_feature_engineering - Engineered dataset saved to data/engineered/engineered_x_train.csv
+2026-01-10 13:27:43,344 - INFO - use_feature_engineering - Engineered dataset saved to data/engineered/engineered_x_test.csv
+2026-01-10 13:27:43,344 - INFO - use_feature_engineering - Successfully engineered the dataset and saved all outputs!
+2026-01-10 13:29:01,004 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:29:11,889 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:30:23,642 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:30:24,122 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:30:24,310 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:30:24,470 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:30:24,642 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:31:20,612 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:32:15,716 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:32:43,702 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:50,631 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:51,359 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:51,506 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:51,674 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:51,845 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:52,001 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:53,106 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:53,665 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:54,059 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:54,597 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:55,208 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:55,361 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:55,560 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:55,747 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:55,920 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:56,105 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:56,266 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:40:56,450 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:42:40,648 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:53:46,933 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:06,019 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:16,928 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:21,343 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:24,562 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:30,559 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:35,383 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:35,679 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:39,263 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:42,845 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:49,070 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:51,637 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:54:55,465 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:17,852 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:21,212 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:27,783 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:34,019 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:39,219 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:40,925 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 13:55:43,088 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:03,641 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:07,844 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:09,721 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:13,406 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:20,917 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:21,730 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:22,230 - INFO - feature_engineering - New engineered features successfully added.
+2026-01-10 14:09:38,339 - INFO - feature_engineering - New engineered features successfully added.
